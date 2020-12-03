@@ -27,5 +27,38 @@
             </tr>
             <!-- colspan >>행을 합침 -->
         </table>
+        <h2>객실 요금표</h2>
+        <figure>
+            <!-- 묶음 처리 -->
+            <figcaption>
+                <p>객실 현황표</p>
+            </figcaption>
+            <table border="1">
+                <thead>
+                <tr>
+                    <ph><th>방이름</th><th>대상</th><th>크기</th><th>가격</th></ph> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>동백방</td><td>여성팀</td><td>2인실</td><td rowspan="4">1인 2만원</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">장미방</td><td>가족 1팀</td><td rowspan="3">4인실</td>
+                </tr>
+                <tr>
+                    <td>가족 2팀</td>
+                </tr>
+                <tr>
+                    <td>유채방</td><td>남성팀</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">※전체를 렌트합니다. </td>
+                </tr>
+            </tfoot>
+            </table>
+     </figure>
     </body>
 </html>
