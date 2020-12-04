@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>form_연습_2</title>
+    </head>
+    <body>
+        <form action="login.jsp" method="POST">
+            <h3>수강과목을 선택하시오.(다수 선택 가능)</h3>
+            <input type="checkbox" value="grm"/>문법
+            <input type="checkbox" value="wr"/>작문
+            <input type="checkbox" value="rd"/>독해
+            <!-- 레이블을 쓰지 않고 사용함.  -->
+            <h3>수강과목을 선택하시오.(중복 선택 불가능)</h3>
+            <label> <input type="radio" name="subjet"/>영어회화</label><br>
+                <!-- name>>radiod에서는 같은 값을 주어야함. 변수의 역할을 함 -->
+                <!-- br>>줄바꿈 -->
+            <label><input type="radio" name="subjet"/>중국어회화</label><br>
+            <label><input type="radio" name="subjet"/>일어회화</label><br>
+        </form>
+    </body>
+</html>

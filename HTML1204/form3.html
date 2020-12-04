@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>form_연습_1</title>
+    </head>
+    <body>
+        <form>
+            <input type="search"/><br>
+            <!-- <input type="submit" value="검색"/> <br> -->
+            <!-- 검색하는 바 생성 -->
+            이메일<input type="email"/><br>
+            주문수량<input type="number"/>개<br>
+            <p>올해 과 티(T)를 만들려고 합니다. 색상을 추천해주세요.</p>
+            <label>선호색상<input type="color" value="#FFB2F5"></label><br>
+            <h3>접수일자 선택</h3>
+            <input type="date" min="2020-12-01" max="2020-12-20"/><br>
+            <input type="image" src="../images/car_red.jpg" alt="자동차"/><br>
+            첨부파일<input type="file"/><br>
+            <input type="text" id="name" autofocus placeholder="실명 입력"/><br>
+            <!-- autofocus>> 커서를 자동으로 설정, 커서 디폴트 -->
+            <!-- placeholder>> 입력칸에 적힌 hint, 주석st  -->
+            <h3>여름 방학 특강 신청</h3>
+            <label for="class"/>학과</abel>
+            <select size="5" id="class"mutiple>
+                <!-- mutiple>>여러개 보기가 보임, size>>보기 5개씩 보임  -->
+                <option>건축공학과</option>
+                <option>기계공학과</option>
+                <option>산업공학과</option>
+                <option>컴퓨터공학과</option>
+                <option>화학공학과</option>
+            </select><br>
+            <!-- selectoin 태그별 그룹별로 -->
+            <h3>가나 식당</h3>
+            <label for="menu">메뉴</label>
+            <select id="menu">
+                <optgroup label="식사">
+                    <option>김치찌개</option>
+                    <option>된장찌개</option>
+                    <option>부재찌개</option>
+                    <option>순대국</option>
+                    <option>비빔밥</option>
+                </optgroup>
+                <optgroup label="분식">
+                    <option>떡볶이</option>
+                    <option>쫄면</option>
+                    <option>어묵탕</option>
+                    <option>라볶이</option>
+                    <option>모둠튀김</option>
+                </optgroup>
+            </select><br>
+            <h3>메모장</h3> 
+            <textarea cols="100" rows="10"></textarea>
+            <!-- 100글자를 쓰면 다음 줄로 넘어감, 총 10줄 -->
+            <input type="submit" value="회원가입"/>
+        </form>
+    </body>
+</html>
