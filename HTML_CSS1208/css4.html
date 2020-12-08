@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>형제_선택자 연습</title>
+        <!-- 선택자A+선택자B>>선택자A의 바로 뒤에 있는 선택자 하나,
+             선택자A~선택자B>> 선택자A의 바로 뒤에 있는 선택자 전부.-->
+        <style>
+           .base + li{
+                color: seagreen;
+                /* '홈페이지꾸미기' 글꼴 색상 지정. */
+           }
+           .base~li{
+               background-color: tomato;
+               /* base빼고 전부 배경 색상 지정. */
+           }
+           
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="base">기본뼈대(html태그)</li>
+            <li>홈페이지 꾸미기(css)</li>
+            <li>선택자</li>
+            <li>글꼴, 배경, 색상..</li>
+            <li>레이아웃</li>
+        </ul>
+    </body>
+</html>

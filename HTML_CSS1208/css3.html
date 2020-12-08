@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>부모_선택자 연습</title>
+        <style>
+            #area>h2{
+                /* 아이디가 area의 자식의 h2 */
+                color: #8a2be2;
+            }
+            #area h2{
+                /* 아이디가 area인 후손의 h2 */
+                color: peru;
+            }
+            h2{
+                color: palegoldenrod;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>css 선택자</h1>
+        <div id="area">
+            <!-- div는 부모, h,p는 자식 -->
+            <h2>신규확진 594명</h2>
+            <p>국내 신종 코로나바이러스 감염증(코로나19) 확산세가 거센 가운데 8일 신규 확진자 수는 600명에 육박했다. 
+                지난 5일(583명) 이후 사흘 만에 다시 600명 아래로 내려온 것이지만 확산세가 꺾인 것으로 보기는 힘들다. 
+            </p>
+            <div>
+                <h2>오늘의 요리</h2>
+                <li>김치</li>
+                <li>칼국수</li>
+                <li>비빔밥</li>
+            </div>
+        </div>
+        <div id="news">
+            <h2>로또조작 의혹</h2>
+            <p>로또조작 의혹이 제기되어 조사를 받던 도중, 로또 영수증 QR코드를 통해 로또 구매자들이 찍은 번호들을 전부 파악할 수 있다는 것이 밝혀졌다</p>
+        </div>
+    </body>
+</html>

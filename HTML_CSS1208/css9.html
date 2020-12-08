@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>선택자 연습</title>
+        <style>
+            li:first-child{
+                /* li의 첫번째 자식 설정 변경. */
+                background-color: yellow;
+            }
+            li:last-child{
+                /* li의 마지막 자식 설정 변경. */
+                background-color: yellow;
+            }
+            li:nth-child(2){
+                /* li의 자식 번호 설정하여 변경. -2는 거꾸로 순서.*/
+                background-color: tomato;
+            }
+            li:nth-child(2n){
+                /* li의 자식 번호 등차수열 변경. */
+                background-color: blue;
+            }
+            li:nth-child(3n-1){
+                /* li의 자식 번호 수열 변경. */
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>오늘의 메뉴</h2>
+        <ul>
+            <li>짜장면</li>
+            <li>짬뽕</li>
+            <li>군만두</li>
+            <li>탕수육</li>
+            <li>양장피</li>
+            <li>고추잡채</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>속성선택자 연습</title>
+        <style>
+            input[type=checkbox]:checked + div{
+                /* input의 아이디 없이 사용하는 방법. >>실행 안됌.*/
+                height: 0px;
+            }
+            div{
+                width: 300px;
+                height: 200px;
+                /*border>>블록만들기,1px>>블록의 굵기, solid>>실선. */
+                border: 1px solid brown;
+                /* 부모의 영역보다 더 클 경우 감추어 버림>>hidden, 스크롤로 내려보기>> scroll */
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="checkbox"/> 뉴스 감추기
+       <div>
+           <!-- div은 블록 레벨 요소이다.화면 전체에 표시 가능. 화면 크기에 따라 동적으로 줄바꿈. -->
+           <h1>내집마련이 소비 심리에 영향</h1>
+           <p>한국은행은 8일 'BOK 경제연구: 주택 구매가 가계의 최적 소비 경로에 미치는 영향' 보고서에 이같은 내용을 발표했다. </p>
+           <p>정 연구위원은 "주택시장 가격 상승과 거래량이 공통으로 소비에 영향 미쳤을 것"이라며 "바로 결과에 적용하는 것은 무리가 있지만 그 경로에서 소비가 영향받았다고 생각할 수는 있겠다"고 밝혔다. </p>
+        </div>
+    </body>
+</html>

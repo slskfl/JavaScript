@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>속성선택자 연습</title>
+        <style>
+            #newschk:checked + div{
+                /* 높이가 0이므로 내용은 보이지 않음.>>overflow 영향 */
+                height: 0;
+            }
+            #news{
+                overflow: hidden;
+                width: 450px;
+                height: 300px;
+                /* transition-duration: 1s; */
+                transition: height 1s;
+                /* transition>>전환 효과->1초동안 변환하거라. */
+            }
+        </style>
+    </head>
+    <body>
+       <input type="checkbox" id="newschk"/>뉴스 감추기
+       <div id="news">
+           <!-- div은 블록 레벨 요소이다.화면 전체에 표시 가능. 화면 크기에 따라 동적으로 줄바꿈. -->
+           <h1>내집마련이 소비 심리에 영향</h1>
+           <p>한국은행은 8일 'BOK 경제연구: 주택 구매가 가계의 최적 소비 경로에 미치는 영향' 보고서에 이같은 내용을 발표했다. </p>
+       </div>
+    </body>
+</html>
