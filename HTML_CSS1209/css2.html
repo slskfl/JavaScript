@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>스타일 사이즈 연습</title>
+        <style>
+            body{
+                font-size: 16px;
+                background-color: wheat;
+            }
+            /* 부모는 px를 사용, 자식은 em을 사용. */
+            h1{
+                /* 1em>>16px */
+                font-size: 2em;
+                font-weight: normal;
+                color:#ff2266
+            }
+            p{
+                font-size: 1em;
+                /* font-weight: bold; */
+            }
+            .price{
+                /* a밑줄과 윗줄, 가운데줄 */
+                text-decoration: underline ;
+                text-decoration: overline ;
+                text-decoration: line-through;
+            }
+            img{
+                width: 300px;
+                /* height가 설정값이 없으면 width의 비율로 정해짐. */
+            }
+            .ita{
+                font-style: italic; 
+                /* italic>>기울기 */
+            }
+            /* h1,h2,p..등 각각 크기를 부여하는 것보다 body로 한번에 넣어주자 
+            h1{
+                font-size: 24px;
+            }
+            p{
+                font-size: 12px;
+            }*/
+        </style>
+    </head>
+    <body>
+       <h>코로나</h>
+       <p>현재 코로나19는 2.5단계, 나는 갈 곳을 잃어 집에만 있는다. <span class="ita">스팬영역</span></p>
+        <img src="../images/Koala.jpg" alt="코알라"/>
+        <p><span class="price">돈이 행복이 아니다.</span>돈이 최고야! </p>
+    </body>
+</html>

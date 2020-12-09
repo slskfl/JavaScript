@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <title>속성선택자 연습</title>
         <style>
-            input[type=checkbox]:checked + div{
+            input[type=checkbox]:checked + #news{
                 /* input의 아이디 없이 사용하는 방법. >>실행 안됌.*/
                 height: 0px;
             }
@@ -20,7 +20,7 @@
     </head>
     <body>
         <input type="checkbox"/> 뉴스 감추기
-       <div>
+       <div id="news">
            <!-- div은 블록 레벨 요소이다.화면 전체에 표시 가능. 화면 크기에 따라 동적으로 줄바꿈. -->
            <h1>내집마련이 소비 심리에 영향</h1>
            <p>한국은행은 8일 'BOK 경제연구: 주택 구매가 가계의 최적 소비 경로에 미치는 영향' 보고서에 이같은 내용을 발표했다. </p>
