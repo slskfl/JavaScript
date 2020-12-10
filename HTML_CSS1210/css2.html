@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>스타일 문단 연습</title>
+        <style>
+            p{
+                width: 500px;
+                border: 1px solid purple;
+                white-space: nomal;
+                overflow: hidden;
+            }
+            .menu{
+                list-style-image: url(../images/12.png);
+                /* list-style: square; */
+            }
+            .menu ul{
+                /* menu의 후손 */
+                list-style: disc;
+            }
+        </style>
+    </head>
+    <body>
+        <p>금융인증서비스는 금융결제원과 은행이 공동으로 마련한 것으로, 은행의 인터넷·모바일뱅킹에서 금융인증서를 무료로 발급받을 수 있습니다. 발급 후에는 금융결제원의 클라우드(cloud·가상 저장공간) 저장소에 보관해 따로 프로그램을 설치하지 않고도 컴퓨터나 모바일 기기로 이용할 수 있습니다.</p>
+        <ul class="menu">
+            <!-- li*4 -->
+            <li>칼국수</li>
+            <li>비빔밥
+                <ul>
+                    <li>야채비빔밥</li>
+                    <li>소고기비빔밥</li>
+                </ul>
+            </li>
+            <li>김치찌개</li>
+            <li>된장찌개</li>
+        </ul>
+    </body>
+</html>

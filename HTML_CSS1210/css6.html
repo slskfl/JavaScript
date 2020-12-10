@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>스타일 배경 연습</title>
+        <style>
+            #box{
+                width: 500px;
+                height: 500px;
+               /* background-image: url(../images/roll.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;*/
+                background : url(../images/arrow_next.png)repeat;
+                /* 속성을 한번에 나열 */
+                paddind:30px;
+                /* padding>>안쪽 여백 */
+                background-clip: content-box;
+                /* padding만큼의 배경이 잘림 */
+                background-origin:content-box ;
+                border: 1px solid black ;
+            }
+        </style>
+    </head>
+    <body>
+       <h1>배경 속성</h1>
+       <div id="box">
+
+       </div>
+    </body>
+</html>
