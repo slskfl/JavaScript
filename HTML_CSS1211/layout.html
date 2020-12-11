@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>스타일 layout 연습</title>
+        <style>
+          body{
+            width: 960px;
+            margin:0 auto;
+          }
+          header{
+            border: 1px solid black;
+          }
+          #content{
+            overflow: hidden;
+          }
+          aside{
+            width: 200px;
+            float: left;
+            border: 1px solid black;
+          }
+          #mainContent{
+            width: 750px;
+            float: right;
+            border: 1px solid black;
+          }
+          footer{
+            border: 1px solid black;
+            clear: both;
+          }
+        </style>
+    </head>
+    <body>
+        <header>
+          <h1>이곳은 헤더 영역</h1>
+          <nav>
+            <h2>이곳은 메뉴 영역</h2>
+          </nav>
+        </header>
+        <div id="content">
+          <aside>
+            <h2>미리 메리크리스마스</h2>
+            <p>12월 25일 크리스마스 파티, 김구와 둘이 친구 없는 사람 둘이서 놂.</p>
+          </aside>
+        <div id="mainContent" >
+          <section>
+            <h2>2021년 시작</h2>
+            <p>1월 1일, 25살 파티</p>
+          </section>
+          <section>
+            <h2>31일 다들 피곤 예상</h2>
+            <p>일 끝나고 오는 상황, 예상 못한 거 아님.</p>
+          </section>
+        </div>
+        </div>
+        <footer>
+          <address>경기도 용인시 남대강</address>
+        </footer>
+    </body>
+</html>

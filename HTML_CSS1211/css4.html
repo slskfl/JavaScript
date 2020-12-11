@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>스타일 float 연습</title>
+        <style>
+          li{
+              list-style: none;
+              float: left;
+              padding: 15px;
+              background-color: orange;
+          }
+          li:hover{
+              background-color: yellowgreen;
+              color:white;
+          }
+          /* 메뉴 옆에 있는 p태그를 밑으로 내리기. */
+         /* p{
+              /* clear>> float속성을 해지. 속성값에 따라 다르게 입력.
+              both>> 속성값과 관련 없이 그냥 알아서 해지. 
+              clear: left; 
+          }*/
+          ul{
+              overflow: hidden;
+          }
+        </style>
+    </head>
+    <body>
+      <ul>
+          <li>회사소개</li>
+          <li>제품소개</li>
+          <li>커뮤니티</li>
+          <li>자료실</li>
+      </ul>
+      <P>내용</P>
+    </body>
+</html>
