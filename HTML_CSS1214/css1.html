@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>position 연습</title>
+        <style>
+            #area{
+                width: 500px;
+                height: 500px;
+                background-color: tomato;
+                position:absolute
+            }
+          .box{
+              width: 100px;
+              height: 100px;
+              border: 1px solid black;
+              position: relative;
+              /* relative>>상대적 .
+              absolute>>겹쳐서 보임.
+              position>>위치를 변경하기 위함.*/  
+          }
+          .box1{
+              background-color: green;
+              left:10px;
+              top:10px;
+              z-index: 10;
+              /* z-index>>숫자가 높을 수록 앞으로 나옴.기본은 0 */
+          }
+          .box2{
+              background-color: yellow;
+              left:20px;
+              top:32px;
+          }
+          .box3{
+              background-color: blue;
+              left:30px;
+              top:30px;
+          }
+        </style>
+    </head>
+    <body>
+        <h1>자동차는 뛰뛰빵빵</h1>
+        <img src="../images/car_purple.jpg"
+
+        <!-- <div id="box1" calss="box"></div> 
+        <div id="box2" calss="box"></div>-->
+
+        <div id="area">
+            <div class="box1 box"></div>
+            <div class="box2 box"></div>
+            <div class="box3 box"></div>
+        </div>
+    </body>
+</html>

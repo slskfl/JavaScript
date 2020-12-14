@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>전환효과에 변형기법 연습</title>
+      <!-- 고정된 틀안에서만 이지미 크기 변형 -->
+        <style>
+            /* 크기변형  375 215*/
+            #area{
+                width: 375px;
+                height: 214px;
+                border: 2px solid black;
+                overflow: hidden;
+            }
+            img{
+                transition: transform 3s;
+            }
+            img:hover{
+                transform: scale(1.2,1.2);
+               
+            }
+        </style>
+    </head>
+    <body>
+        <div id="area">
+            <img src="../images/car_purple.jpg" alt="자동차"/>
+        </div>
+    </body>
+</html>

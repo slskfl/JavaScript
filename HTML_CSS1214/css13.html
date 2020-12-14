@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>전환효과에 변형기법 연습</title>
+        <!-- 1. 이동
+             2. 크기변형
+             3. 회전
+             4. 기울임 -->
+        <style>
+            /* 회전 */
+            img{
+                transition: transform 1s;
+            }
+            img:hover{
+                /* rotate(각도) */
+                /* transform: rotate(90deg); */
+                transform: skew(30deg);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <img src="../images/car_purple.jpg" alt="자동차"/>
+    </body>
+</html>

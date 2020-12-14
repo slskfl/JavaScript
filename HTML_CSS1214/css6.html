@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>gradient 연습</title>
+        <style>
+            #box{
+                /* https://www.colorzilla.com/gradient-editor/ >>사이트 이용하기. */
+                height: 500px;
+                background: -moz-linear-gradient(left,  #ff0000 0%, #ffff00 50%, #00ff00 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff0000), color-stop(50%,#ffff00), color-stop(100%,#00ff00)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(left,  #ff0000 0%,#ffff00 50%,#00ff00 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(left,  #ff0000 0%,#ffff00 50%,#00ff00 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(left,  #ff0000 0%,#ffff00 50%,#00ff00 100%); /* IE10+ */
+                background: linear-gradient(to right,  #ff0000 0%,#ffff00 50%,#00ff00 100%); /* W3C */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box"></div>
+    </body>
+</html>

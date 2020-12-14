@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>전환효과에 변형기법 연습</title>
+        <!-- 1. 이동
+             2. 크기변형
+             3. 회전
+             4. 기울임 -->
+        <style>
+            /* 이동 */
+            #box{
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                transition: transform 2s;
+            }
+            #box:hover{
+                /* transform(x, y)>> 4가지를 모두 통 틀어 */
+                transform: translate(100px,50px);
+            }
+            img{
+                perspective: 1000px;
+                perspective-origin: 100px;
+                transition: transform 2s;
+            }
+            img:hover{
+                /* transformX(x)>> x축으로만 이동.*/
+                transform: translateX(300px);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="box"></div>
+        <img src="../images/car_purple.jpg" alt="자동차"/>
+    </body>
+</html>
