@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>애니메이션 연습</title>
+        <style>
+            @keyframes backchange {
+                0%{
+                    background-color: rebeccapurple;
+                    width: 100px;
+                }
+                30%{
+                    background-color: rgb(225, 228, 74);
+                    width: 200px;
+                }
+                100%{
+                    background-color: rgb(74, 128, 228);
+                    width: 200px;
+                }
+            }
+            #box{
+                width: 100px;
+                height: 100px;
+                background-color: rebeccapurple;
+                animation: backchange 3s ease 1s itfinite; 
+            }
+            #box:hover{
+                animation-play-state: paused;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box" ></div>
+    </body>
+</html>

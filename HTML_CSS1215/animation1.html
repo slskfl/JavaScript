@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8"/>
+        <title>애니메이션 연습</title>
+        <style>
+            @keyframes backchange {
+                from{
+                    background-color: rebeccapurple;
+                    width: 100px;
+                }
+                to{
+                    background-color: rgb(225, 228, 74);
+                    width: 200px;
+                }
+            }
+            #box{
+                width: 100px;
+                height: 100px;
+                background-color: rebeccapurple;
+                animation-delay: 10ms;
+                animation-direction: normal;
+                animation-duration: 3s;
+                animation-iteration-count: 3;
+                animation-name: backchange;
+                animation-timing-function: ease;
+                animation-fill-mode: none; 
+            /*  animation-delay>>실행시작의 시간지정. 
+                animation-direction>> reverse(다시 돌아옴)
+                         alternate(역으로 같은 효과로 돌아옴)
+                animation-duration>>지속시간.
+                animation-iteration-count>> 반복시간
+                animation-fill-mode>> 다시 원래의 형태로 돌아 오는지
+                         */
+                /* 한번에 정의하기. 
+                animation: backchange 3s ease 1s itfinite; */
+             
+            }
+            #box:hover{
+                animation-play-state: paused;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box" ></div>
+    </body>
+</html>
