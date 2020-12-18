@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트-prompt2</title>
+        <script>
+            // prompt>>*연산자 빼고, 모두 문자열로 인식.
+            var vehicle=Number(prompt("오늘 교통비는?","0"));
+            var lunch=Number(prompt("오늘 점심 식비는?","0"));
+            var beverage=Number(prompt("오늘 음료비는?","0"));
+            var reasonablePrice=10000;
+            var total=vehicle+lunch+beverage;
+            var excess=total-reasonablePrice;
+            var result= total>reasonablePrice? ("오늘 지출이" + excess +"초과했습니다." ): "돈 관리 잘했어요.";
+            document.write(result);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>            
