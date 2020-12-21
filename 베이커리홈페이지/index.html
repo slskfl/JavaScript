@@ -2,9 +2,9 @@
 <html lang="kor">
     <head>
         <meta charset="utf-8">
-        <title>베이커리홈페이지_연습</title>
+        <title>리나_베이커리홈페이지_연습</title>
         <link href="css/index.css" type="text/css" rel="stylesheet"/>
-        </style>
+        <script src="js/index.js"></script>
     </head>
     <body>
         <!-- 헤더 영역 -->
@@ -15,15 +15,15 @@
             <nav>
                 <!-- 메뉴바 -->
                 <ul>
-                    <li class="dropdown"><a href="#" cladd="dropbtn">소개</a></li>
-                    <li class="dropdown"><a href="#" cladd="dropbtn">빵만들기</a>
+                    <li class="dropdown"><a href="#" class="dropbtn">소개</a></li>
+                    <li class="dropdown"><a href="#" class="dropbtn">빵만들기</a>
                         <ul class="dropdown_contents">
                             <li><a href="#">제빵 재료</a></li>
                             <li><a href="#">제빵 도구</a></li>
                             <li><a href="#">제빵 포장도구</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="#" cladd="dropbtn">커뮤니티</a>
+                    <li class="dropdown"><a href="#" class="dropbtn">커뮤니티</a>
                         <ul class="dropdown_contents">
                             <li><a href="#">나만의 레시피</a></li>
                             <li><a href="#">내가 만든 빵</a></li>
@@ -39,45 +39,47 @@
             </div>
             <div class="welcome">
                 <h1>베이커리 카페</h1>
-                <h2>세상에 하나뿐인 베이커리</h2>
+                <h2>세상에 하나뿐인 한리나</h2>
             </div>
         </div>
         <!-- 메인 콘텐츠 영역 -->
         <div id="contents">
             <div class="notice">
                 <h2>공지사항</h2>
-                <table border="1">
+                <table>
                     <tr>
                         <th>내용</th><th>날짜</th>
                     </tr>
                     <tr>
                         <td><a href="#">제 1회 DD베이커리 워크숍에 오신것을 환영합니다.</a></td>
-                        <th><a href="#">2017-12-12 </a></th>
+                        <th>2017-12-12</th>
                     </tr>
                     <tr>
                         <td><a href="#">올림픽공원 카페 초보 여성 창업을 추천받습니다.</a></td>
-                        <th><a href="#">2017-12-10 </a></th>
+                        <th>2018-12-10 </th>
                     </tr>
                     <tr>
                         <td><a href="#">맛과 영양, 환경문제까지 생각하는 베이커리!</a></td>
-                        <th><a href="#">2018-03-09 </a></th>
+                        <th>2020-03-09</th>
                     </tr>
                     <tr>
                         <td><a href="#">고품질 크림으로 만든 디저트로 달콤하게 겨울나기</a></td>
-                        <th><a href="#">2018-03-07  </a></th>
+                        <th>2018-03-07</th>
                     </tr>
                     <tr>
                         <td><a href="#">온가족이 함께 즐기는 베이킹 체험 교실.</a></td>
-                        <th><a href="#">2018-03-05 </a></th>
+                        <th>2018-03-05 </th>
                     </tr>
                 </table>
             </div>
             <div class="partner">
                 <h2>Partner</h2>
-                <a href="popup.html">
-                    <img src="image/PARTNER.jpg" alt="partner"/>
-                    <img src="image/PARTNER_UP.png" alt="partner_up"/>
-                </a>
+                <div class="partner_info">
+                    <a href="#" onclick="partpopup();">
+                        <img src="image/PARTNER.jpg" alt="partner"/>
+                        <img src="image/PARTNER_UP.png" alt="partner_up"/>
+                    </a>
+                </div>
             </div>
             <div class="icons">
                 <div class="btn">
