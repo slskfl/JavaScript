@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트_switch</title>
+        <script> 
+            var site=prompt('1.네이버, 2.구글, 3.다음, 4.줌 \n이동하고자 하는 포털 사이트의 번호를 입력하세요.');
+            var url;
+            switch(site){
+                case '1':
+                    url='www.naver.com';
+                    break;
+                case '2':
+                    url='www.daum.net';
+                    break;
+                case '3':
+                    url='www.gogle.com';
+                    break;  
+                case '4':
+                    url='www.zoom.com';
+                    break; 
+                default:
+                    alert("보기 중에 없는 번호입니다.");
+                    break;                    
+            }
+            if(url){
+                location.href='http://'+url;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>니나의 홈페이지</h1>
+        <p>저의 홈페이지를 방문해 주셔서 감사합니다.</p>
+        <p>홈페이지가 통합되어 새로운 주소로 바뀌었습니다.</p>
+        <p>잠시만 기다리시면 개편된 홈페이지로 이동합니다.</p>
+        <a href="http://www.mbc.co.kr" >개편된 페이지로 바로 이동.</a>
+    </body>
+</html>

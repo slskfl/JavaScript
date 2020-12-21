@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립_객체</title>
+        <script>
+            /*var product= {
+                제품명:'건조 망고',
+                성분:'망고, 설탕, 황색소',
+                가격:5000,
+                원산지:'필리핀'
+             };
+             alert(product.성분);*/
+             /*var tv=new Object();
+             tv.color='white';
+             tv.price=1500000;
+             tv.maker='삼성';
+             alert(tv.color);*/
+             var person={
+                 name:'홍길동',
+                 eat:function(food){
+                     alert(this.name +'이(가)' + food + '을(를) 먹습니다.');
+                 }
+             };
+             person.eat('국수');
+        </script>
+    </head>
+    <body>
+        <h1 onclick="hello()">길동이의 홈페이지</h1>
+    </body>
+</html>

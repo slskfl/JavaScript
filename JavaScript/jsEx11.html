@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트_array</title>
+        <script>
+           /* var num = new Array();
+            num[0] = 30;
+            num[1] = '대한민국';
+            num[2] = 2.5;
+            alert(num[1]);*/
+            var num=[89, 74, 63, 80, 99, 80, 85];
+            var sum=0;
+            var avg=0;
+            for( var i=0; i<num.length; i++){
+                sum = sum + parseInt(num[i]);
+            }
+            avg = parseInt(sum/num.length*100)/100;
+            document.write('총점 = ' + sum + '<br>');
+            document.write('평균 = ' + avg + '<br>');
+        </script>
+    </head>
+    <body>
+       
+    </body>
+</html>
