@@ -23,6 +23,7 @@ li{
 #header{
     height: 150px;
     border-bottom: 5px solid black;
+    background-color:  hsl(175, 96%, 36%);
 }
 .logo{
     width: 430px;
@@ -48,18 +49,21 @@ li{
 /* 메뉴바 */
 #menu{
     text-align: center;
+    margin-top: 20px;
 }
 nav{
     width: 100%;
+    height: 80px;
     display: inline-block;
 }
 nav>ul{
     /* 자식크기만큼의 크기를 갖기 위함. */
     overflow: hidden;
+    width:960px;
 }
 .dropdown{
     float: left;
-    width: 200px;
+    width: 240px;
     text-align: center;
     /* 자식이 absoluter을 위해 부모를 relative */
     /* position: relative; */
@@ -69,7 +73,7 @@ nav>ul{
     padding: 14px 16px;
 }
 .dropdown>a:hover, .dropdown:hover .dropbtn{
-    background-color: #171ad8;
+    background-color:  hsl(175, 64%, 56%);
     color: #fff;
 }
 .dropdown:hover .dropdown_contents{
@@ -79,7 +83,7 @@ nav>ul{
     /* 처음에는 보이지 않도록 설정 */
     display: none;
     position: absolute;
-    width: 200px;
+    width: 240px;
     background-color: rgba(255,255,255,0.8);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     /*  z-index: 10;>>맨 앞으로 불러오기 */
@@ -91,7 +95,7 @@ nav>ul{
     padding: 12px 16px;
 }
 .dropdown_contents a:hover{
-    background-color: #3be243;
+    background-color:hsl(175, 57%, 77%);
     color: #fff;
 }
 
@@ -99,6 +103,7 @@ nav>ul{
 #main_image{
     height: 400px;
     width: 960px;
+    position: relative;
 }
 #main_image img{
     height: 400px;
@@ -107,8 +112,8 @@ nav>ul{
 }
 .main_text{
     position: absolute;
-    left: 20%;
-    top: 30%;
+    left: 50px;
+    top: 30px;
     text-align: center;
     line-height: 45px;
 }
@@ -117,43 +122,98 @@ nav>ul{
     font-size: 3em;
 }
 
-#contents{
+#content_first{
     width: 960px;
+    height: 300px;
     padding-top: 20px;
+    clear: both;
+}
+#content_first>h1{
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
 }
 .direction{
-    width: 480px;
+    width: 430px;
     float: left;
     margin: 20px;
+    /* display: inline-block;   */
 }
 .direction>h2{
-    text-align: left;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .direction>.direct_info{
     margin-top: 10px;
-    padding-left: 20%;
+    padding-left: 50px;
+    display: inline-block; 
 }
 .direct_info img{
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+}
+.direct_info .btn{
+    background-color: #4376e6;
+    color: #fff;
+    font-size: 0.5em;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.direct_info .btn>.show-hover{
+    display: none;
+}
+.direct_info .btn:hover .show-hover{
+    display: block;
+}
+.direct_info .btn:hover .hidden-hover{
+    display: none;
 }
 .right_person{
-    width: 480px;
+    width: 430px;
     float: right;
     margin: 20px;
 }
 .right_person>h2{
     text-align: center;
+    margin-bottom: 20px;
 }
 .right_person>.person_info{
     margin-top: 10px;
-    padding-left: 20%;
+    padding-left: 50px;
 }
 .person_info img{
     height: 100px;
     width: 100px;
+    margin-right: 10px;
+}
+.person_info .btn{
+    background-color: #4376e6;
+    color: #fff;
+    font-size: 0.5em;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.person_info .btn>.show-hover{
+    display: none;
+}
+.person_info .btn:hover .show-hover{
+    display: block;
+}
+.person_info .btn:hover .hidden-hover{
+    display: none;
 }
 
+#content_second{
+    width: 960px;
+    height: 500px;    
+}
+#content_second>h1{
+    text-align: center;
+    border-bottom: 2px solid black;
+}
 /* 공지사항 */
 .notice{
     width: 550px;
@@ -165,13 +225,14 @@ nav>ul{
     text-align: center;
     /* padding-top: ; */
     /* 아래쪽테두리 */
-    border-bottom: 1px solid #666;
+    border-bottom: 2px solid black;
     padding-bottom: 10px;
 }
 .notice>table{
     font-size: 0.9em;
     color: #666;
     width: 500px;
+    height: 250px;
     margin-left: 20px;
     /* 테이블의 선을 이중선이 아닌 실선으로 변경. */
     border-collapse: collapse;
@@ -188,4 +249,45 @@ nav>ul{
 .notice>table tr:nth-child(2n){
     background-color: rgb(153, 153, 102, 0.5);
 }
+.partner{
+    width: 410px;
+    float: right;
+    margin-top: 20px;
+}
+.partner>h2{
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+.partner>.partner_info{
+    margin-top: 10px;
+    padding-left: 20%;
+}
+.partner_info img{
+    height: 100px;
+    width: 200px;
+    margin-bottom: 10px;
+}
 
+/* 푸터영역 */
+#footer{
+    height: 150px;
+    margin-top: 30px;
+    background-color: hsl(175, 96%, 36%);
+    color: white;
+    padding: 10px 20px;
+}
+#footer>ul{
+    float: left;
+}
+#footer>ul>li{
+    display: inline-block;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+#footer>address{
+    float: right;
+    font-style: normal;
+    font-size: 0.8em;
+    padding-right: 120px;
+}
