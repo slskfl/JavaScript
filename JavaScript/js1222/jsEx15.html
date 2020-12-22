@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트</title>
+        <script>
+           /* var book={
+                naem:'이것이 자바다.',
+                price:30000,
+                language:'한국어',
+                company:'한빛미디어'
+            };
+            for(var key in book){
+                document.write('★' + key + '→' + book[key] + '<br>');
+            }*/
+            var studet={
+                이름:'김청수',
+                국어:92, 수학:88,
+                영어:82, 과학:60
+            };  
+            var output;  
+            with(studet){                    
+                output='*' +이름 +'의 성적표 *<br>';   
+                output+='국어:' + 국어+'<br>';
+                output+='수학:' + 수학+'<br>';
+                output+='영어:' + 영어+'<br>';
+                output+='과학:' + 과학+'<br>';
+                output+='총점:' + (국어+수학+영어+과학)+'<br>';
+                output+='평문:' + (국어+수학+영어+과학)/4 +'<br>';   
+            }
+            document.write(output);                    
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

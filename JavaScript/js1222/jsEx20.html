@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트_console.log</title>
+        <script>
+            //배열 객체 메서드
+            var subway1=['미금', '정자', '수내', '이매', '야탑'];
+            var subway2=['모란', '태평', '가천대입구'];
+            subway1.splice(2, 1, '수내', '이매');
+            console.log(subway1);
+            var data1=subway2.pop();//배열의 마지막 데이터를 꺼낸다.
+            var date2=subway2.shift();//배열의 가장 앞의 데이터를 꺼낸다.
+            subway2.push(date2);//배열의 마지막에 넣는다.
+            console.log(subway2);//배열의 가장 앞쪽에 밀어 넣는다.
+        </script>
+    </head>
+    <body>
+        <h1>나리의 홈페이지</h1>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트_console.log</title>
+        <script>
+            //배열 객체 메서드
+            var subway1=['미금', '정자', '수내', '이매', '야탑'];
+            var subway2=['모란', '태평', '가천대입구'];
+            //join(연결문자)>>배열 객체를 연결문자를 기준으로 하나의 문자형 데이터로 변환한다.
+            /*var result=subway1.join('-');
+            console.log(subwy1[0]);*/
+            //reverse>> 배열을 거꾸로 읽음.
+            /*subway1.reverse();
+            console.log(subway1[0]);*/
+            var subway=subway1.concat(subway2);
+            console.log(subway[5]);
+            var result=subway1.slice(1, 3);
+            console.log(result);
+            //ㄱ,ㄴ,ㄷ.. 순서로 나열
+            subway1.sort();
+            console.log(subway1);
+            var scores=[85, 74, 96, 35, 60];
+            score.sort();
+            console.log(scores);
+        </script>
+    </head>
+    <body>
+        <h1>나리의 홈페이지</h1>
+    </body>
+</html>

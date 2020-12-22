@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트</title>
+        <script>
+            var day=['월요일','화요일','수요일','목요일','금요일','토요일','일요일']
+            var today = new Date();
+            var nowYear = today.getFullYear(),
+                nowMonth = today.getMonth(),
+                nowDate = today.getDate(),
+                nowday = getDay();
+            var day;
+            document.write('<h1> 오늘의 날짜 정보</h2>');
+            document.write('현재 년도 : '+ nowYear + '<br>');
+            document.write('현재 월 : '+ (nowMonth+1) + '<br>');
+            document.write('현재 일 : '+ nowDate + '<br>');
+            document.write('현재 요일 : '+ day[nowday] + '<br>');
+            var theDate = new Date(nowYear, nowMonth, 31);
+            var diffDate=theDate.getTime()-today.getTime();
+            var result=Math.ceil(diffDate/(1000*60*60*24));
+            //Math.ceil>>소수점 올림, floor>>소수점 내림
+            document.write('올해는' +result + '일 남았습니다.');
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트</title>
+        <script>
+            var com = Math.floor(Math.random()*100)+1;
+            var count=0;
+            var myNum;
+            while(true){
+                myNum = Number(prompt('1부터 100사이의 숫자를 넣어보세요.'));
+                if(myNum > com){
+                    alert('당신의 숫자가 커요. 작은 수를 넣어보세요.');
+                    count++;
+                } else if(myNum < com){
+                    alert('당신의 숫자가 작아요. 큰 수를 넣어보세요.');
+                    count++;
+                } else {
+                    count++;
+                    alert('축하합니다. 맞추셨습니다.(시도 횟수= ' + count+'회)');
+                    break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
