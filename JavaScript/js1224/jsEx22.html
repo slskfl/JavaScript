@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트_console.log</title>
+        <script>
+            //문자열 객체를 다루는 메서드(내장 객체)
+            var text ="Hello Thank you good luck to you";
+            document.write(text.charAt(16)+"<br>");
+            document.write(text.indexOf("you")+"<br>"); //you를 찾아 번호 출력.
+            document.write(text.indexOf("you",16)+"<br>");//you를 16자리부터 찾아 번호 출력.
+            document.write(text.lastIndexOf("you")+"<br>");//뒤에서부터 you를 검색.
+            document.write(text.lastIndexOf("you",20)+"<br>");//20부터 거꾸로 you를 검색,
+            document.write(text.match("luck")+"<br>");//단어를 검색하여 출력.
+            document.write(text.search("you")+"<br>");
+            document.write(text.substr(21, 4)+"<br>");//21번째부터 4글자 문자.
+            document.write(text.substring(6, 12)+"<br>");//6번째부터 12-1번째까지의 문자.
+            document.write(text.replace("you","me")+"<br>");//you를 me로 교체
+            document.write(text.toLowerCase()+"<br>");
+            document.write(text.toUpperCase()+"<br>");
+            document.write(text.length,"<br>");
+
+            var t=text.split(" ");// 공백을 기준으로 분리.
+            document.write(t[0]);
+            document.write(t[4]);
+       
+            var str="A";
+            document.write(str.charCodeAt(0),"<br>");
+            document.write(String.fromCharCode(65),"<br>");
+       </script>
+    </head>
+    <body>   
+        <h1>나리의 홈페이지</h1>
+    </body>
+</html>

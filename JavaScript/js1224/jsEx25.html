@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트_console.log</title>
+        <script>
+            var site=['www.kbs.co.kr', 'www.imbc.com', 'www.sbs.co.kr'];
+            var index=0;
+            var width=screen.width;
+            var height=screen.height;
+            setInterval(function(){
+                w=Math.floor(Math.random()*width);
+                h=Math.floor(Math.random()*height);
+                if(index==3){
+                    index=0;
+                }
+                var child=window.open("http://"+site[index], 'child', 'width=600, heigth=300');
+                child.moveTo(w,h);
+                index++;
+            }, 3000);
+        </script>
+    </head>
+    <body>
+        <h1>나리의 홈페이지</h1>
+    </body>
+</html>

@@ -140,6 +140,7 @@ nav>ul{
     /* display: inline-block;   */
 }
 .direction>h2{
+    background-color: rgb(168, 177, 218);
     text-align: center;
     margin-bottom: 20px;
 }
@@ -176,6 +177,7 @@ nav>ul{
     margin: 20px;
 }
 .right_person>h2{
+    background-color: rgb(168, 177, 218);
     text-align: center;
     margin-bottom: 20px;
 }
@@ -230,7 +232,7 @@ nav>ul{
 }
 .notice>table{
     font-size: 0.9em;
-    color: #666;
+    color: rgb(25, 43, 39);
     width: 500px;
     height: 250px;
     margin-left: 20px;
@@ -247,7 +249,7 @@ nav>ul{
     padding: 5px;
 }
 .notice>table tr:nth-child(2n){
-    background-color: rgb(153, 153, 102, 0.5);
+    background-color: rgba(109, 155, 216, 0.5);
 }
 .partner{
     width: 410px;

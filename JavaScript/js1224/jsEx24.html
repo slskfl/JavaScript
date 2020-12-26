@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트_console.log</title>
+        <script>
+           // BOM>> Browser Object Model. 브라우저 객체 모델>> 브라우저를 다루는 기술.
+           // DOM>> Document Object Model. 문서 객체 모델
+        //    window.open("http://www.kbs.co.kr",'child','width=600, height=300');//지정한 url페이지를 새 브라우저 창에 나타냄.
+        //    var child=window.open('','','width=300, height=200');
+        //    child.document.write('<h1>코로나 예방 수칙</h1>');
+        //    child.document.write('<p>코로나 예방 수칙-1번</p>');
+        //    child.document.write('<p>코로나 예방 수칙-2번</p>');
+            var child = window.open('popup.html', 'child', "width=380, height=500");
+            var width=screen.width;
+            var height=screen.height;
+            child.moveTo(200, 300); //창 위치 이동.
+            child.resizeTo(width, height);
+            setInterval(function(){
+                child.resizeBy(-20,-20);
+                child.moveBy(10,10);
+            },1000);
+        </script>
+    </head>
+    <body>
+        <h1>나리의 홈페이지</h1>
+    </body>
+</html>

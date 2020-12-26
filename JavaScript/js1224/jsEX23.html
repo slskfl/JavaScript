@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트_console.log</title>
+        <script>
+           var userName=prompt("당신의 영문 이름은?", "");
+           var userPhoneNumber=prompt("당신의 연락처는애?", "");
+           document.write(userName.toUpperCase(),"<br>");
+           document.write(userPhoneNumber.substring(0,userPhoneNumber.length-4)+"****")
+        //    var starNum=userPhoneNumber.substring(7, 11);
+        //    document.write(userPhoneNumber.replace(starNum,"****",",<br>"));
+            var text="짜장면, 돈가스, 된장국, 김치전, 짬뽕, 칼국수, 순대국";
+            var t=text.split(",");// 공백을 기준으로 분리.
+            var menuChoice=Math.floor(Math.random()*t.length);
+            document.write("오늘의 점심메뉴 : " + t[menuChoice]);
+       </script>
+    </head>
+    <body>   
+        <h1>나리의 홈페이지</h1>
+    </body>
+</html>
