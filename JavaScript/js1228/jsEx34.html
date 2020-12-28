@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트</title>
+        <style>
+            h1{
+                cursor: pointer;
+            }
+        </style>
+        <script> 
+            window.onload=function(){
+                var content=['안녕하세요', '코로나19 바이러스', '코로나 박멸', '방역 수칙'];
+                var head=document.getElementById('header');
+                /*function whenClick(){
+                    alert('안녕하세요.');
+                }
+                head.onclick=whenClick;*/
+                var count=0;
+                head.onclick=function(){
+                    alert(content[count]);
+                    count++;
+                    if(count==3){
+                        head.onclick=nulll;
+                        head.style.cursor='default';
+                        head.innerHTML='활기찬 생활 시작';
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="header">클릭해주세요.</h1>
+    </body>
+</html>

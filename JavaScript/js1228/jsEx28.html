@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트</title>
+        <script> 
+            window.onload=function(){
+                //문서 객체를 생성.
+                var head = document.createElement('h2');
+                var text = document.createTextNode('안녕');
+                head.appendChild(text);
+                document.body.appendChild(head);
+                var image=document.createElement('img');
+                //image.setAttribute('src','image/Koala.jpg');
+                image.src='../images/Koala.jpg';
+                image.width=500;
+                image.height=300;
+                document.body.appendChild(image);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>니나의 홈페이지</h1>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트</title>
+        <script> 
+            window.onload=function(){
+                var head=document.getElementById('header');
+                head.style.border='2px solid red';
+                head.style.color='blue';
+                head.style.fontFamily='궁서체';
+                head.style.backgroundColor='yellow';
+                var willRemove=document.getElementById('will-remove');
+                //document.body.removeChild(willRemove);
+                setTimeout(function() {
+                    document.body.removeChild(willRemove);
+                }, 5000);
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="header">니나의 홈페이지</h1>
+        <h1 id="will-remove">이곳은 곧 없어지는 영역임.</h1>
+        <p id="content">방문해주셔서 감사합니다.</p>
+    </body>
+</html>

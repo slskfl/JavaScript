@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트</title>
+        <script> 
+            window.onload=function(){
+                //아이디가 아닌 Tagname을 이용.
+                var head=document.getElementsByTagName('h1');
+                //innerHTML오류 나는 이유? 아이디처럼 유일하지 않기 때문.
+                //태그는 자동으로 태그를 배열로 지정. 
+                //head.innerHTML='코로나 박멸!';
+                head[0].innerHTML='코로나 박멸!';
+                head[1].innerHTML='방역 수칙 지키기.';
+            }
+        </script>
+    </head>
+    <body>
+        <h1>니나의 홈페이지</h1>
+        <h1>자바 공부중..</h1>
+    </body>
+</html>
