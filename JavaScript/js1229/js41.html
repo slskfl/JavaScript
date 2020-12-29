@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트_객체</title>
+        <script> 
+            function TestScore(name, Kscore, Escore){
+                this.userName=name;
+                this.userKscore=Kscore;
+                this.userEscore=Escore;
+                this.avg;
+
+                TestScore.prototype.getInfo=function(){
+                    var str="";
+                    str+= "이름 : " + this.userName + '<br>';
+                    str+= "국어 점수 : " + this.userKscore + '<br>';
+                    str+= "영어 점수 : " + this.userEscore + '<br>';
+                    return str;
+                }
+
+                TestScore.prototype.getAvg=function(){
+                    this.avg = (this.userKscore + this.userEscore)/2;
+                    return "평균 점수 : " + this.avg +'<br>';
+                }              
+            }
+
+            var han = new TestScore("한리나", 100, 90);
+            document.write(han.getInfo());
+            document.write(han.getAvg());
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

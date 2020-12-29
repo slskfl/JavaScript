@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트_객체</title>
+        <script> 
+        function CheckWeight(name, height, weight){
+            this.userName=name;
+            this.userHeight=height;
+            this.userWeight=weight;
+            this.minWeight;
+            this.maxWeight;
+
+            //정보 출력 메서드.>> 내부 함수
+            this.getInfo=function(){
+                var str="";
+                str+="이름 : " + this.userName + '<br>';
+                str+="키 : " + this.userHeight + '<br>';
+                str+="몸무게 : " + this.userWeight + '<br>';
+                return str;
+            }
+            //비만도 체크 메서드. >> 내부 함수
+            this.getResult=function(){
+                this.minWeight=(this.userHeight-100)*0.9-5;
+                this.maxWeight=(this.userHeight-100)*0.9+5;
+                if(this.userWeight>=this.minWeight && this.userWeight<=this.maxWeight){
+                    return "정상 몸무게입니다.<br>";
+                } else if(this.userWeight<this.minWeight){
+                    return "마른 체형입니다.<br>";
+                } else {
+                    return "비만입니다.";
+                }
+            }
+        }
+        //함수 활용
+        var hong = new CheckWeight("홍길동", 175, 70);
+        var kim = new CheckWeight("김철수", 170, 90);
+        document.write(hong.getInfo());
+        document.write(hong.getResult());
+        document.write(kim.getInfo());
+        document.write(hong.getResult());
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

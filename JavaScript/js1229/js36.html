@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트</title>
+        <script> 
+            window.onload=function(){
+                var btnA=document.getElementById('btn-a');
+                var btnB=document.getElementById('btn-b');
+                var countA=document.getElementById('count-a');
+                var countB=document.getElementById('count-b');
+
+                btnA.onclick=function(){
+                    //Number을 넣지 않았을 경우 글자로 인식>> 숫자로 인식. 
+                    countA.innerHTML=Number(countA.innerHTML)+1;
+                };
+                btnB.onclick=function(){
+                    countB.innerHTML=Number(countB.innerHTML)+1;
+                    //btnB를 클릭할 경우 btnA를 클릭함.
+                    btnA.onclick();
+                };
+            };
+        </script>
+    </head>
+    <body>
+        <button id="btn-a">김철수</button>
+        <button id="btn-b">홍길동</button>
+        <h1>김철수 투표수 - <span id="count-a">0</span></h1>
+        <h1>홍길동 투표수 - <span id="count-b">0</span></h1>
+    </body>
+</html>

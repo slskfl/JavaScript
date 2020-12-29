@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트</title>
+        <script> 
+            function hello(){
+                var name='한리나';
+                alert(name+'님 안녕하세요.');
+            }
+            window.onload=function(){
+                document.getElementById('moveWeb').onclick=function(){
+                    alert('kbs로 이동합니다.');
+                    return false;
+                };
+            };
+        </script>
+    </head>
+    <body>
+        <!-- <h1 onclick=" var name='김철수'; alert(name+'님 안녕하세요');">클릭</h1> -->
+        <h1 onclick="hello();">클릭</h1>
+        <a id="moveWeb" href="http://www.kbs.co.kr">한국방송공사</a>
+    </body>
+</html>

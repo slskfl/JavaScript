@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트</title>
+        <script> 
+            window.onload=function(){
+               /* document.getElementById('header').onclick=function(){
+                    if(e.shitkey){
+                        this.style.color='red';
+                        this.style.backgroundColor='yellow';
+                    } else {
+                         this.style.color='blue';
+                        this.style.backgroundColor='yellow';
+                    }
+                };*/
+                /*변수로 생각하여 30을 출력.
+                var backgroundColor=50;
+                var color=20;
+                alert(backgroundColor-color);*/
+                document.getElementById('header').onclick=function(e){
+                    var event = e || window.event;
+                    for (var key in event){
+                        document.body.innerHTML += '<p>' + key + '》》' + event[key] + '</p>';
+                    }
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <h1 id="header">클릭해주세요.</h1>
+    </body>
+</html>
